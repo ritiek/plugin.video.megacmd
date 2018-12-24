@@ -1,0 +1,23 @@
+<addon id="plugin.video.megacmd" name="MegaCMD" provider-name="Ritiek Malhotra (@ritiek)" version="0.1.0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.xbmcswift2" version="1.1.1" />
+  </requires>
+  <extension library="addon.py" point="xbmc.python.pluginsource">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language />
+    <summary>Stream videos from your MEGA cloud account</summary>
+    <description>Mega (stylized in uppercase as MEGA) is a cloud storage and file hosting service offered by Mega Limited, an Auckland-based company.
+
+This is a very minimal addon to stream videos from your MEGA account.
+
+You need to have MEGAcmd command-line tool installed (from https://mega.nz/cmd) and must have logged into your account via MEGAcmd before using this addon. This addon parses output from the then available `megacmd` command which allows for streaming media much faster than logging into MEGA via the addon itself and decrypting the files manually.
+
+This addon is not affiliated with MEGA or Mega Limited in any way.</description>
+    <license>MIT</license>
+    <source>https://github.com/ritiek/plugin.video.megacmd</source>
+  </extension>
+</addon>
